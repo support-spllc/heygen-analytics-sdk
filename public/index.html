@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HeyGen SDK Test</title>
+  <script>
+  window.heygenClientId = "client_abc123";
+  window.heygenApiToken = "eyJ0b2tlbiI6ICI4OGRhNjQ5ZDIwNjY0OTI1YWQyNGMzY2JjYWI3YzM0YiIsICJ0b2tlbl90eXBlIjogInNhX2Zyb21fcmVndWxhciIsICJjcmVhdGVkX2F0IjogMTc0ODY0MzExN30=";  // Your real API token
+  window.heygenAnalyticsEndpoint = "https://heygen-analytics.netlify.app/.netlify/functions/log";
+  window.heygenAvatarId = "d0498c23d9154c4da2d899af45924fe2"; // Your real avatar ID
+</script>
+  <script src="/heygen-analytics.min.js"></script>
+</head>
+<body>
+  <button onclick="window.HeyGenAnalytics.start()">Start</button>
+  <button onclick="window.HeyGenAnalytics.speak('Hi there!')">Speak</button>
+  <button onclick="window.HeyGenAnalytics.end()">End</button>
+</body>
+</html>
