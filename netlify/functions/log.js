@@ -1,10 +1,7 @@
 exports.handler = async (event) => {
-  const data = JSON.parse(event.body || '{}');
-
-  console.log("📥 Received analytics event:", data);
-
+  console.log("Log event:", event.body);
   return {
     statusCode: 200,
-    body: JSON.stringify({ status: "ok" })
+    body: JSON.stringify({ status: "logged" })
   };
 };
