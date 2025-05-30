@@ -3,5 +3,14 @@
   "version": "1.0.0",
   "description": "Self-hosted HeyGen analytics SDK",
   "main": "index.html",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@heygen/streaming-avatar": "^2.0.16"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
 }
