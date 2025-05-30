@@ -1,0 +1,7 @@
+{
+  "name": "heygen-analytics-sdk",
+  "version": "1.0.0",
+  "description": "Self-hosted HeyGen analytics SDK",
+  "main": "index.html",
+  "license": "MIT"
+}

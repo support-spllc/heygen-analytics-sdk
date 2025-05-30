@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HeyGen SDK Test</title>
+  <script>
+    window.heygenClientId = "demo-client";
+    window.heygenApiToken = "YTJhOTM3NDNlOTYyNDVhNGE0OWNkOTg0YzliYTJhYzctMTc0Mzk4NjEyNw==";
+    window.heygenAnalyticsEndpoint = "/.netlify/functions/log";
+    window.heygenAvatarId = "d0498c23d9154c4da2d899af45924fe2";
+  </script>
+  <script src="/heygen-analytics.min.js"></script>
+</head>
+<body>
+  <h1>SDK Loaded</h1>
+  <button onclick="window.HeyGenAnalytics.start()">Start</button>
+  <button onclick="window.HeyGenAnalytics.speak('Hi there!')">Speak</button>
+  <button onclick="window.HeyGenAnalytics.end()">End</button>
+</body>
+</html>
