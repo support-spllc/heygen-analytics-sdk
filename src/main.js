@@ -31,7 +31,8 @@ import StreamingAvatar, { AvatarQuality, StreamingEvents } from "@heygen/streami
 
   window.HeyGenAnalytics = {
     async start() {
-      const avatar = new StreamingAvatar({ token: config.token });
+      const token = await getFreshToken(); // <== Move here
+      const avatar = new StreamingAvatar({ token });
 
       avatar.on(StreamingEvents.STREAM_READY, () => log("stream_ready"));
       avatar.on(StreamingEvents.AVATAR_START_TALKING, () => log("start_talking"));
